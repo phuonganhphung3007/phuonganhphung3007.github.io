@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Phung Thi Phuong Anh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+
+/* ==========================================================================
+   CV — Harvard format (serif, centered header, ruled small-caps sections,
+   org/location and role/dates split left–right, bullet points)
+   ========================================================================== */
+.cv-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.cv-toolbar .page-heading { margin: 0; }
+.cv-print {
+  font: inherit; font-size: var(--fs-small);
+  padding: 8px 16px; border: 1px solid var(--color-text); border-radius: 6px;
+  background: var(--color-bg); color: var(--color-text); cursor: pointer;
+}
+.cv-print:hover { background: var(--color-text); color: var(--color-bg); }
+
+.cv {
+  --cv-font: "EB Garamond", "Garamond", "Times New Roman", Times, serif;
+  max-width: 816px;                 /* US Letter width at 96dpi */
+  margin: 32px auto 0;
+  padding: 56px 64px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 16px rgba(0,0,0,.06);
+  font-family: var(--cv-font);
+  font-size: 16px;
+  line-height: 1.3;
+  color: #000;
+}
+.cv a { color: inherit; }
+.cv p { margin: 0; }
+.cv-head { text-align: center; margin-bottom: 12px; }
+.cv-name { margin: 0 0 4px; font-size: 26px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.cv-section {
+  margin: 18px 0 6px; padding-bottom: 2px;
+  border-bottom: 1px solid #000;
+  font-size: 16px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.cv-entry { margin-bottom: 10px; break-inside: avoid; }
+.cv-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; column-gap: 16px; }
+.cv-row > :first-child { flex: 1 1 auto; min-width: 0; }
+.cv-row > span:last-child { flex: none; margin-left: auto; text-align: right; white-space: nowrap; }
+.cv-entry > p { margin-top: 2px; }
+.cv ul { margin: 2px 0 0; padding-left: 20px; }
+.cv li { margin: 1px 0; padding-left: 2px; }
+.cv-skills p + p { margin-top: 2px; }
+
+@media (max-width: 760px) {
+  .cv { padding: 28px 18px; margin-top: 20px; font-size: 15px; box-shadow: none; }
+  .cv-name { font-size: 22px; }
+  .cv-row { column-gap: 10px; }
+  .cv-row > :first-child { flex-basis: 55%; }
+  .cv-row > span:last-child { font-size: 14px; }
+}
+
+@media print {
+  @page { size: letter; margin: 0.5in 0.6in; }
+  body { background: #fff; }
+  .page { max-width: none; padding: 0; }
+  .site-header, .cv-toolbar { display: none; }
+  .page-top { margin-top: 0; }
+  .cv { max-width: none; margin: 0; padding: 0; border: 0; box-shadow: none; font-size: 10.5pt; line-height: 1.22; }
+  .cv-section { margin: 10px 0 4px; }
+  .cv-entry { margin-bottom: 6px; }
+  .cv a { text-decoration: none; }
+  .cv-name { font-size: 18pt; }
+  .cv-section { font-size: 10.5pt; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="site-header">
+  <p class="brand"><a href="index.html">Phung Thi Phuong Anh</a> <span class="crumb">/ <a href="cv.html">CV</a></span></p>
+  <nav class="tabs" aria-label="Main">
+    <a href="works.html">Works</a>
+    <a href="writings.html">Writings</a>
+    <a href="notes.html">Notes</a>
+    <a href="cv.html" aria-current="page">CV</a>
+  </nav>
+</header>
+
+<main class="page-top">
+  <div class="cv-toolbar">
+    <h1 class="h-section page-heading">CV</h1>
+    <button class="cv-print" type="button" onclick="window.print()">Download PDF</button>
+  </div>
+
+  <article class="cv" aria-label="Curriculum vitae">
+    <header class="cv-head">
+      <h2 class="cv-name">Phung Thi Phuong Anh</h2>
+      <p>Taipei, Taiwan &#9642; <a href="mailto:phuonganh3007.work@gmail.com">phuonganh3007.work@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/phuong-anh-phung-thi-7a8223221">LinkedIn</a> &#9642; <a href="https://github.com/phuonganhphung3007">GitHub</a> &#9642; <a href="http://phuonganhphung3007.github.io">phuonganhphung3007.github.io</a></p>
+    </header>
+
+    <section>
+      <h3 class="cv-section">Education</h3>
+      <div class="cv-entry">
+        <div class="cv-row"><strong>National Taiwan University</strong><span>Taipei, Taiwan</span></div>
+        <div class="cv-row"><span>Bachelor of Arts, Economics. GPA: 3.6/4.3</span><span>Expected May 2028</span></div>
+        <p><em>Awards:</em> 2024 College of Social Sciences Scholarship for International Students</p>
+        <p><em>Relevant Coursework:</em> Data Analysis and Machine Learning; Data Science and Social Inquiry; Statistical Learning and Deep Learning; Python Programming</p>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="cv-section">Research Experience</h3>
+      <div class="cv-entry">
+        <div class="cv-row"><strong>School of Political Science and Economics, National Taiwan University</strong><span>Taipei, Taiwan</span></div>
+        <div class="cv-row"><em>Research Assistant</em><span>September 2026 – Present</span></div>
+        <ul>
+          <li>Conducted a research project on scraping and analyzing trends in Pokémon card auction prices under the supervision of Professor Yi Tsui.</li>
+          <li>Supported students in the Strategic Management and Leadership course with basic Python and technical troubleshooting.</li>
+          <li>Prepared user guides and FAQs, and organized anonymized prompt logs and AI-generated outputs.</li>
+          <li>Performed sample data cleaning, descriptive analysis, and visualization as exemplars for students.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="cv-section">Work Experience</h3>
+      <div class="cv-entry">
+        <div class="cv-row"><strong>Nable Co. Ltd</strong><span>Taipei, Taiwan</span></div>
+        <div class="cv-row"><em>Business Development Intern</em><span>April 2026 – June 2026</span></div>
+        <ul>
+          <li>Conducted market research and competitor analysis to identify potential customers.</li>
+          <li>Designed an IMP plan and Ideal Customer Profile with the team’s manager.</li>
+          <li>Created a sales kit and pitch deck for customer outreach.</li>
+        </ul>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-row"><strong>Taiwan-Asia Exchange Foundation</strong><span>Taipei, Taiwan</span></div>
+        <div class="cv-row"><em>Research &amp; Conference Assistant Intern</em><span>June 2025 – October 2025</span></div>
+        <ul>
+          <li>Selected for the internship through the NTU International Mentorship Program 2025.</li>
+          <li>Edited the English biweekly and Chinese quarterly e-newsletters, enhancing content quality and contributing to 3 published articles.</li>
+          <li>Coordinated a 50-participant international summer camp and 3 conference events on APAC-region themes.</li>
+          <li>Supported social media initiatives, including planning, advertising, and bilingual content creation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="cv-section">Activities &amp; Leadership</h3>
+      <div class="cv-entry">
+        <div class="cv-row"><strong>2026 CFA Research Challenge</strong><span>Taipei, Taiwan</span></div>
+        <div class="cv-row"><em>Contestant</em><span>August 2026</span></div>
+        <ul>
+          <li>Conducted equity research on TSMC’s performance as part of a team to reach an investment recommendation.</li>
+          <li>Strengthened financial analysis, valuation, and market research skills while assessing the firm’s potential trends and developments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="cv-section">Skills &amp; Interests</h3>
+      <div class="cv-entry cv-skills">
+        <p><strong>Programming:</strong> Python, R, SQL, HTML, CSS, JavaScript, Git, Power BI, Tableau</p>
+        <p><strong>Tools:</strong> GitHub Actions, LaTeX, Figma, MS Office, Canva, CapCut</p>
+        <p><strong>Languages:</strong> Vietnamese (native), English (C1), Mandarin (B1–B2)</p>
+        <p><strong>Interests:</strong> Yoga (NTU Yoga Club, 114th–115th), road cycling (NTU Cycling Club, 115th)</p>
+      </div>
+    </section>
+  </article>
+</main>
+</div>
+</body>
+</html>
