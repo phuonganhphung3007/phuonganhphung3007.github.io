@@ -119,8 +119,8 @@ a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; b
 }
 .hero-subtitle {
   margin: 0;
-  font-size: var(--fs-subtitle);
-  line-height: 1.2;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.5;
   color: var(--color-text-secondary);
 }
 
